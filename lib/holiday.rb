@@ -57,7 +57,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |key,value|
     value.each do |k,v|
-      puts k.to_s+":"+v.join(",")
+      puts key.to_s+":"+k.to_s+":"+v.join(",")
     end
   end
 end
